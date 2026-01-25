@@ -1,0 +1,22 @@
+{
+    "name": "collaborative-todo-list-js",
+    "version": "1.0.0",
+    "description": "JavaScript implementation of the collaborative to-do list application",
+    "main": "src/app.js",
+    "type": "module",
+    "scripts": {
+        "start": "node src/app.js",
+        "test": "node --test test/*.test.js",
+        "dev": "node --watch src/app.js"
+    },
+    "keywords": [
+        "todo",
+        "task-management",
+        "javascript",
+        "async"
+    ],
+    "author": "Rajiv",
+    "license": "MIT",
+    "dependencies": {},
+    "devDependencies": {}
+}
