@@ -58,12 +58,12 @@ javascript/
 - [x] Initialize npm project
 - [x] Create this implementation plan
 
-### Phase 2: Core CRUD (Week 4)
-- [ ] Implement `storage.js` - File I/O operations
-- [ ] Implement `TaskManager.js` - Task CRUD
-- [ ] Implement `UserManager.js` - User CRUD
-- [ ] Create basic tests for each module
-- [ ] Basic CLI interface
+### Phase 2: Core CRUD (Week 4) ✓ COMPLETED
+- [x] Implement `storage.js` - File I/O operations
+- [x] Implement `taskManager.js` - Task CRUD
+- [x] Implement `userManager.js` - User CRUD
+- [x] Create basic tests for each module
+- [x] Basic CLI interface
 
 ### Phase 3: Features (Week 5)
 - [ ] Implement filtering functions

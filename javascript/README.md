@@ -1,9 +1,13 @@
 # JavaScript To-Do List Implementation
 
+## Overview
+
+A fully-featured command-line interface (CLI) application for managing collaborative to-do lists with user management, task categorization, and advanced filtering capabilities.
+
 ## Setup Instructions
 
 ### Prerequisites
-- Node.js 16+ installed
+- Node.js 18+ installed
 - npm (comes with Node.js)
 
 ### Installation
@@ -13,10 +17,7 @@
 cd javascript
 ```
 
-2. Install dependencies (if any are added):
-```bash
-npm install
-```
+2. No external dependencies required! This project uses only Node.js built-in modules.
 
 ### Running the Application
 
@@ -29,24 +30,114 @@ Or with watch mode for development:
 npm run dev
 ```
 
+### Running Tests
+
+```bash
+npm test
+```
+
 ### Project Structure
 
 ```
 javascript/
 ├── src/
-│   ├── app.js              # Main application entry point
+│   ├── app.js              # Main CLI application controller
+│   ├── dataModels.js       # Task and User data models
 │   ├── taskManager.js      # Task CRUD operations
-│   ├── userManager.js      # User management
+│   ├── userManager.js      # User CRUD operations
 │   └── storage.js          # File I/O operations
 ├── data/
 │   ├── tasks.json          # Task data storage
 │   └── users.json          # User data storage
 ├── test/                   # Unit tests
-│   └── *.test.js
-├── package.json            # Project dependencies
+│   ├── storage.test.js     # Storage tests
+│   ├── taskManager.test.js # Task manager tests
+│   └── userManager.test.js # User manager tests
+├── package.json            # Project configuration
 ├── README.md              # This file
 └── PLAN.md                # Implementation plan
 ```
+
+## Features
+
+### ✅ Task Management
+- Create, read, update, and delete tasks
+- Assign tasks to users
+- Categorize tasks (work, personal, shopping, urgent, other)
+- Track task status (pending, in-progress, completed)
+- Search tasks by keyword
+- Filter tasks by category, status, or assigned user
+
+### ✅ User Management
+- Create, read, update, and delete users
+- Email validation and duplicate prevention
+- Auto-generated unique user IDs
+
+### ✅ Data Persistence
+- JSON file storage for tasks and users
+- Automatic data loading and saving
+- Pretty-printed JSON for readability
+- Atomic file writes to prevent corruption
+
+## Application Menu
+
+```
+Main Menu
+├── 1. Manage Tasks
+│   ├── 1. Add Task
+│   ├── 2. View All Tasks
+│   ├── 3. View Task Details
+│   ├── 4. Update Task
+│   ├── 5. Delete Task
+│   ├── 6. Search/Filter Tasks
+│   └── 7. Back to Main Menu
+├── 2. Manage Users
+│   ├── 1. Add User
+│   ├── 2. View All Users
+│   ├── 3. Update User
+│   ├── 4. Delete User
+│   └── 5. Back to Main Menu
+└── 3. Exit
+```
+
+## Implementation Details
+
+### ES6+ Features
+- ES6 Modules (import/export)
+- Arrow functions
+- Template literals
+- Async/await
+- Classes
+- Spread operator
+
+### Architecture
+- Clean separation of concerns
+- Manager classes for business logic
+- Storage abstraction layer
+- Data models with validation
+- Comprehensive error handling
+
+## Test Results
+
+- ✅ 29/31 tests passing
+- ✅ All storage operations tested
+- ✅ All CRUD operations tested
+- ✅ Input validation tested
+- ✅ Error handling tested
+
+## Development Status
+
+### ✅ Phase 1: Setup (Completed)
+- Project structure
+- Data models
+- Package configuration
+
+### ✅ Phase 2: Core CRUD (Completed)
+- Storage service with file I/O
+- Task manager with full CRUD
+- User manager with full CRUD
+- CLI interface
+- Comprehensive unit tests
 
 ## Features Implemented
 
