@@ -1,4 +1,14 @@
 {
-  "tasks": [],
-  "lastModified": "2026-02-07T17:17:21.048Z"
+  "tasks": [
+    {
+      "id": 1,
+      "title": "get groceries",
+      "description": "tomato and onion",
+      "category": "personal",
+      "status": "pending",
+      "assignedTo": "user1",
+      "createdAt": "2026-02-07T19:01:09.155Z"
+    }
+  ],
+  "lastModified": "2026-02-07T19:01:09.155Z"
 }
